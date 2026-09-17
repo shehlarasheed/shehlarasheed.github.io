@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shehla Rasheed — psychology researcher, clinical practitioner, and evidence-focused writer working across mental health, neurodevelopment, resilience, psychometrics, and behavioral science.">
+<meta name="theme-color" content="#4F665A">
+<title>Shehla Rasheed | Psychology Researcher & Clinical Practitioner</title>
+<style>
+:root{
+  --ivory:#F5F2EA; --cream:#FBF9F4; --beige:#E6DED1; --sage-deep:#4F665A;
+  --sage:#718579; --sage-soft:#AAB8AC; --espresso:#353A35; --charcoal:#292C29;
+  --muted:#70766F; --line:#D7D8CF; --white:#fff; --shadow:0 22px 70px rgba(53,58,53,.10);
+  --serif:Georgia,"Times New Roman",serif; --sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--charcoal);font-family:var(--sans);line-height:1.7}
+a{color:inherit;text-decoration:none} img{max-width:100%;display:block} button{font:inherit}
+.container{width:min(1180px,calc(100% - 44px));margin:auto}.eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage-deep);font-weight:700}
+.serif{font-family:var(--serif)} .muted{color:var(--muted)}
+.nav{position:sticky;top:0;z-index:50;background:rgba(251,249,244,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(215,216,207,.75)}
+.nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{font-family:var(--serif);font-size:1.35rem;letter-spacing:-.02em}.brand small{display:block;font-family:var(--sans);font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:-4px}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:.78rem;color:#5f655f}.nav-links a:hover{color:var(--sage-deep)}
+.nav-cta{padding:10px 15px;border:1px solid var(--sage-deep);border-radius:999px;color:var(--sage-deep)}
+.menu{display:none;background:none;border:0;font-size:1.5rem;color:var(--charcoal)}
+
+.hero{padding:72px 0 86px;overflow:hidden;position:relative}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:var(--sage-soft);opacity:.17;right:-250px;top:-170px}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:72px;align-items:center}
+.hero-copy{position:relative;z-index:2}.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(3.7rem,7vw,6.6rem);line-height:.96;letter-spacing:-.055em;margin:15px 0 28px}
+.hero h1 em{font-style:italic;color:var(--sage-deep)}
+.hero-lead{font-size:1.08rem;max-width:650px;color:#5e645e}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:999px;border:1px solid var(--sage-deep);font-weight:700;font-size:.8rem;letter-spacing:.04em;transition:.2s}
+.btn-primary{background:var(--sage-deep);color:var(--white)}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(79,102,90,.2)}
+.btn-ghost{color:var(--sage-deep)}.btn-ghost:hover{background:var(--beige)}
+.hero-photo{position:relative}.hero-photo:after{content:"";position:absolute;inset:20px -20px -20px 20px;background:var(--beige);z-index:-1;border-radius:4px}
+.hero-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;box-shadow:var(--shadow)}
+.photo-note{position:absolute;bottom:20px;left:-22px;background:rgba(79,102,90,.94);color:white;padding:13px 17px;font-size:.76rem;letter-spacing:.04em;max-width:245px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:60px}
+.stat{padding:24px 18px}.stat:not(:last-child){border-right:1px solid var(--line)}.stat strong{font-family:var(--serif);font-size:2rem;font-weight:400;display:block;color:var(--sage-deep)}.stat span{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+
+.section{padding:112px 0}.section-alt{background:var(--ivory)}
+.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:55px}.section-head h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.7rem,5vw,4.6rem);line-height:1.02;letter-spacing:-.04em;margin:10px 0 0}.section-head p{max-width:480px;color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px}.about-quote{font-family:var(--serif);font-size:2rem;line-height:1.3;color:var(--sage-deep);border-left:2px solid var(--sage);padding-left:28px;margin:0}.about-text{font-size:1.02rem;color:#5c625c}.about-text p{margin-top:0;margin-bottom:20px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:30px}.chip{border:1px solid var(--line);padding:8px 12px;border-radius:999px;font-size:.73rem;color:#60675f;background:rgba(255,255,255,.35)}
+
+.expertise{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.expertise-item{background:var(--cream);padding:34px 30px;display:grid;grid-template-columns:52px 1fr;gap:20px}.expertise-item:nth-child(even){background:var(--ivory)}
+.expertise-num{font-family:var(--serif);font-size:1.4rem;color:var(--sage)}.expertise h3{font-family:var(--serif);font-weight:400;font-size:1.55rem;margin:0 0 6px}.expertise p{font-size:.88rem;color:var(--muted);margin:0}
+
+.field{position:relative}.field-wrap{display:grid;grid-template-columns:.72fr 1.28fr;gap:55px;align-items:start}
+.field-copy{position:sticky;top:110px}.field-copy h2{font-family:var(--serif);font-size:clamp(2.7rem,5vw,4.5rem);font-weight:400;line-height:1;letter-spacing:-.04em;margin:12px 0 20px}.field-copy p{color:var(--muted)}
+.field-note{margin:28px 0;border-left:2px solid var(--sage);padding:2px 0 2px 20px;font-family:var(--serif);font-style:italic;font-size:1.15rem;color:#566158}
+.field-meta{font-size:.72rem;text-transform:uppercase;letter-spacing:.13em;color:var(--sage-deep);margin-top:25px}
+.field-feature{display:grid;grid-template-columns:1.35fr .65fr;gap:14px}.field-feature img{height:100%;min-height:390px;object-fit:cover}.field-side{display:grid;gap:14px}.field-side img{height:188px;object-fit:cover}
+.caption{font-size:.72rem;color:var(--muted);margin-top:8px}.caption strong{color:var(--espresso)}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}.panel{background:var(--cream);padding:48px}.panel:nth-child(2){background:var(--ivory)}.panel h3{font-family:var(--serif);font-size:2.2rem;font-weight:400;margin:10px 0 18px}.panel p{color:var(--muted)}.panel ul{padding-left:20px;color:#606660}.panel li{margin:9px 0}
+
+.publications{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.pub{padding:28px;background:var(--white);border:1px solid var(--line);min-height:250px;display:flex;flex-direction:column;justify-content:space-between;transition:.2s}.pub:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.pub-type{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage-deep);font-weight:700}.pub h3{font-family:var(--serif);font-size:1.35rem;font-weight:400;line-height:1.25;margin:25px 0 10px}.pub p{font-size:.78rem;color:var(--muted);margin:0}.pub-status{font-size:.72rem;color:var(--sage-deep);margin-top:22px}
+
+.methods{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.method{padding:26px 20px;background:var(--cream);border-top:2px solid var(--sage-soft)}.method strong{font-family:var(--serif);font-size:1.2rem;font-weight:400}.method p{font-size:.76rem;color:var(--muted);margin:9px 0 0}
+
+.timeline{position:relative;border-left:1px solid var(--line);margin-left:10px}.timeline-item{position:relative;padding:0 0 42px 40px}.timeline-item:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--sage-deep);left:-5px;top:7px;box-shadow:0 0 0 6px var(--ivory)}.timeline-date{font-size:.68rem;text-transform:uppercase;letter-spacing:.15em;color:var(--sage-deep);font-weight:700}.timeline h3{font-family:var(--serif);font-size:1.65rem;font-weight:400;margin:7px 0 4px}.timeline p{color:var(--muted);margin:0;max-width:700px;font-size:.9rem}
+
+.writing{display:grid;grid-template-columns:1fr 1fr;gap:18px}.writing-card{padding:34px;border:1px solid var(--line);background:var(--cream)}.writing-card h3{font-family:var(--serif);font-size:1.55rem;font-weight:400;margin:8px 0 10px}.writing-card p{font-size:.85rem;color:var(--muted);margin:0}.link-arrow{display:inline-block;margin-top:22px;color:var(--sage-deep);font-size:.75rem;text-transform:uppercase;letter-spacing:.13em;font-weight:700}
+
+.recognition{display:grid;grid-template-columns:1.1fr .9fr;gap:55px}.award-list{border-top:1px solid var(--line)}.award{display:grid;grid-template-columns:110px 1fr;gap:22px;padding:20px 0;border-bottom:1px solid var(--line)}.award-year{color:var(--sage-deep);font-size:.78rem;font-weight:700}.award strong{font-family:var(--serif);font-size:1.15rem;font-weight:400}.award span{display:block;color:var(--muted);font-size:.76rem;margin-top:4px}
+.academic-card{background:var(--sage-deep);color:white;padding:48px}.academic-card h3{font-family:var(--serif);font-weight:400;font-size:2.3rem;line-height:1.1;margin:0 0 16px}.academic-card p{color:#e4ebe5;font-size:.88rem}.academic-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.academic-links a{border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:9px 13px;font-size:.72rem}.academic-links a:hover{background:rgba(255,255,255,.1)}
+
+.gallery-section{background:var(--ivory)}.gallery-grid{columns:3 280px;column-gap:16px}.gallery-item{break-inside:avoid;margin:0 0 24px}.gallery-button{display:block;width:100%;padding:0;border:0;background:none;cursor:pointer;position:relative;text-align:left;overflow:hidden}.gallery-button img{width:100%;height:auto;transition:.35s;filter:saturate(.95)}.gallery-button:hover img{transform:scale(1.025)}.zoom{position:absolute;right:12px;top:12px;width:32px;height:32px;border-radius:50%;background:rgba(41,44,41,.78);color:white;display:grid;place-items:center;opacity:0;transition:.2s}.gallery-button:hover .zoom{opacity:1}.gallery-item figcaption{padding:10px 2px 0;font-size:.72rem;color:var(--muted)}.gallery-item figcaption strong{display:block;color:var(--espresso);font-weight:600}.gallery-item figcaption span{display:block}
+
+.contact{background:var(--sage-deep);color:white;padding:90px 0}.contact-grid{display:grid;grid-template-columns:1fr .8fr;gap:80px;align-items:end}.contact h2{font-family:var(--serif);font-size:clamp(3rem,6vw,5.8rem);font-weight:400;line-height:.98;letter-spacing:-.04em;margin:12px 0 22px}.contact p{color:#dfe7e1;max-width:600px}.contact a.email{font-family:var(--serif);font-size:1.5rem;color:white;border-bottom:1px solid rgba(255,255,255,.4);display:inline-block;margin-top:15px}.contact-side{border-left:1px solid rgba(255,255,255,.25);padding-left:35px}.contact-side span{display:block;color:#bdcabe;font-size:.7rem;text-transform:uppercase;letter-spacing:.17em;margin-bottom:7px}.contact-side a{display:block;margin-bottom:20px}.footer{background:#35463d;color:#dfe7e1;padding:20px 0;font-size:.7rem}.footer-inner{display:flex;justify-content:space-between;gap:20px}.footer a{color:white}
+
+.lightbox{position:fixed;inset:0;background:rgba(24,29,25,.92);z-index:100;display:none;align-items:center;justify-content:center;padding:30px}.lightbox.open{display:flex}.lightbox img{max-width:min(1100px,94vw);max-height:86vh;object-fit:contain}.lightbox-close{position:absolute;top:20px;right:25px;background:none;border:0;color:white;font-size:2rem;cursor:pointer}.lightbox-title{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:white;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){
+  .nav-links{display:none;position:absolute;top:78px;left:0;right:0;background:var(--cream);padding:20px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.menu{display:block}.nav-cta{border:0;padding:0}
+  .hero-grid,.about-grid,.field-wrap,.recognition,.contact-grid{grid-template-columns:1fr;gap:45px}.hero{padding-top:48px}.hero h1{font-size:clamp(3.4rem,15vw,5.5rem)}.hero-photo{max-width:680px}.field-copy{position:static}.stats{margin-top:35px}.expertise{grid-template-columns:1fr}.publications{grid-template-columns:1fr}.methods{grid-template-columns:repeat(2,1fr)}.writing{grid-template-columns:1fr}.contact-side{border-left:0;border-top:1px solid rgba(255,255,255,.25);padding:25px 0 0}.section{padding:80px 0}.section-head{display:block}.section-head p{margin-top:20px}.field-feature{grid-template-columns:1fr}.field-side{grid-template-columns:1fr 1fr}.field-side img{height:230px}.photo-note{left:12px}.about-quote{font-size:1.7rem}
+}
+@media(max-width:560px){
+  .container{width:min(100% - 28px,1180px)}.nav-inner{height:68px}.nav-links{top:68px}.hero{padding:38px 0 65px}.hero h1{font-size:3.45rem}.stats{grid-template-columns:1fr}.stat{border-right:0!important;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.methods{grid-template-columns:1fr}.field-side{grid-template-columns:1fr}.field-side img{height:auto}.panel{padding:30px}.award{grid-template-columns:75px 1fr}.footer-inner{display:block}.footer-inner div+div{margin-top:8px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top">Shehla Rasheed<small>Psychology · Research · Evidence</small></a>
+    <button class="menu" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#research">Research</a>
+      <a href="#fieldwork">Fieldwork</a><a href="#publications">Research Work</a><a href="#academic">Academic</a>
+      <a href="#writing">Writing</a><a href="#contact" class="nav-cta">Get in touch</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">Psychology Researcher · Clinical Practitioner</div>
+        <h1>Research that stays close to <em>real lives.</em></h1>
+        <p class="hero-lead">I work across psychological research, clinical practice, psychometrics and evidence communication — with a particular interest in mental health, resilience, neurodevelopment and the social contexts in which people live.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#research">Explore my research&nbsp; →</a>
+          <a class="btn btn-ghost" href="#about">About me</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="images/profile.jpg" alt="Shehla Rasheed in a research setting">
+        <div class="photo-note">Psychology · Research · Behavioral Science<br><span style="opacity:.72">Evidence translated into useful knowledge.</span></div>
+      </div>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><strong>7+</strong><span>Years across research & practice</span></div>
+      <div class="stat"><strong>15+</strong><span>Evidence-based policy briefs</span></div>
+      <div class="stat"><strong>12+</strong><span>Public writing contributions</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="about">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">01 · About</div><h2>A researcher with a human lens.</h2></div>
+      <p>My work brings together psychological science, field experience and clear communication — from community research to clinical settings and interdisciplinary evidence work.</p>
+    </div>
+    <div class="about-grid">
+      <div><p class="about-quote">“Good research does not lose sight of the people behind the data.”</p></div>
+      <div class="about-text">
+        <p>I am a psychology researcher and clinical practitioner with experience spanning mental health, psychometrics, neurodevelopmental populations, community-based work and evidence synthesis.</p>
+        <p>My research interests include mental health and resilience, displacement and adaptation, motivation, executive functioning, affective regulation, social cognition and psychological measurement. I am especially interested in research that is methodologically rigorous while remaining connected to lived experience.</p>
+        <p>My MPhil research examined mental health problems, post-migration living difficulties and resilience among Afghan refugees, combining psychological measurement with field-based research.</p>
+        <div class="chips"><span class="chip">Mental Health</span><span class="chip">Resilience</span><span class="chip">Psychometrics</span><span class="chip">Neurodevelopment</span><span class="chip">Motivation</span><span class="chip">Social Cognition</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="expertise">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">02 · Expertise</div><h2>Where my work sits.</h2></div>
+      <p>A selective view of the themes and methods that shape my research and professional practice.</p>
+    </div>
+    <div class="expertise">
+      <article class="expertise-item reveal"><div class="expertise-num">01</div><div><h3>Mental Health & Resilience</h3><p>Psychological distress, resilience, adaptation, trauma and wellbeing across vulnerable and displaced populations.</p></div></article>
+      <article class="expertise-item reveal"><div class="expertise-num">02</div><div><h3>Neurodevelopment & Motivation</h3><p>Executive functioning, task initiation, motivation and developmental vulnerability in clinical and research contexts.</p></div></article>
+      <article class="expertise-item reveal"><div class="expertise-num">03</div><div><h3>Psychometrics & Measurement</h3><p>Scale development, translation, validity, reliability and culturally responsive psychological measurement.</p></div></article>
+      <article class="expertise-item reveal"><div class="expertise-num">04</div><div><h3>Evidence & Communication</h3><p>Evidence synthesis, research briefs, analytical reporting and translating complex findings for varied audiences.</p></div></article>
+      <article class="expertise-item reveal"><div class="expertise-num">05</div><div><h3>Clinical Psychology</h3><p>Psychological assessment and trauma-informed, CBT-, DBT- and person-centred approaches across clinical settings.</p></div></article>
+      <article class="expertise-item reveal"><div class="expertise-num">06</div><div><h3>Community & Refugee Research</h3><p>Mixed-methods research grounded in lived experience, displacement, social context and adaptation.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="research">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">03 · Research</div><h2>Questions worth staying with.</h2></div>
+      <p>My research moves between psychological measurement and the social realities that give those measurements meaning.</p>
+    </div>
+    <div class="split">
+      <article class="panel reveal"><div class="eyebrow">Research themes</div><h3>Mental health, displacement & resilience</h3><p>My MPhil research focused on mental health problems, post-migration living difficulties and resilience among Afghan refugees, with a strong emphasis on culturally appropriate psychological measurement.</p><ul><li>Psychological distress & resilience</li><li>Post-migration living difficulties</li><li>Trauma & suicidal ideation</li><li>Cultural adaptation of measures</li></ul></article>
+      <article class="panel reveal"><div class="eyebrow">Current direction</div><h3>Behavior, cognition & development</h3><p>Alongside refugee mental health, my broader research interests examine how motivation, executive functioning, affective regulation and social cognition interact with developmental and neurological contexts.</p><ul><li>Motivation & task initiation</li><li>Executive functioning</li><li>Affective regulation</li><li>Neurodevelopmental populations</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="section field" id="fieldwork">
+  <div class="container">
+    <div class="field-wrap">
+      <div class="field-copy">
+        <div class="eyebrow">04 · Research in the field</div>
+        <h2>Mental Health,<br>Displacement<br>& <em class="serif" style="color:var(--sage-deep)">Resilience.</em></h2>
+        <p>My MPhil research connected psychological measurement with direct engagement in Afghan refugee communities. These photographs document the fieldwork behind the research — conversations, household settings and the practical work of listening.</p>
+        <div class="field-note">Listening to lived experience changes the questions we ask — and the evidence we build.</div>
+        <div class="field-meta">MPhil Research · 2020–2024</div>
+      </div>
+      <div>
+        <div class="field-feature">
+          <div><img src="images/field-10.jpg" alt="Shehla conducting a field interview with community members" loading="lazy"><div class="caption"><strong>Field interview</strong> · Community-based data collection.</div></div>
+          <div class="field-side">
+            <div><img src="images/field-11.jpg" alt="Community conversation during field research" loading="lazy"><div class="caption">Community conversation</div></div>
+            <div><img src="images/field-14.jpg" alt="Researcher speaking with a community member" loading="lazy"><div class="caption">Understanding context through dialogue</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">05 · How I work</div><h2>From data to meaning.</h2></div>
+      <p>Research methods I use to build, test and communicate psychological evidence.</p>
+    </div>
+    <div class="methods">
+      <div class="method reveal"><strong>Quantitative</strong><p>SEM, EFA/CFA, mediation & moderation, growth curve modelling, measurement invariance.</p></div>
+      <div class="method reveal"><strong>Qualitative</strong><p>Reflexive thematic analysis, cognitive interviewing, field notes and reflexive journaling.</p></div>
+      <div class="method reveal"><strong>Psychometrics</strong><p>Scale development, translation, content and construct validity, reliability and cultural adaptation.</p></div>
+      <div class="method reveal"><strong>Analysis</strong><p>SPSS, AMOS, STATA, Mplus and R, including lavaan and semTools; NVivo for qualitative analysis.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="publications">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">06 · Selected research work</div><h2>Work in progress.</h2></div>
+      <p>Selected manuscripts and research projects represented accurately by their current status.</p>
+    </div>
+    <div class="publications">
+      <article class="pub reveal"><div><span class="pub-type">Manuscript · Under review</span><h3>Post-Migration Living Difficulties, Resilience, Trauma, Distress, and Suicidal Ideation Among Afghan Refugees: Pashto Validation of Five Scales</h3><p>Rasheed, S. & Maqsood, A.</p></div><div class="pub-status">Europe’s Journal of Psychology</div></article>
+      <article class="pub reveal"><div><span class="pub-type">Manuscript · Under review</span><h3>Psychometric Validation of Pashto-Translated Mental Health Scales Among Afghan Refugees</h3><p>Rasheed, S. & Maqsood, A.</p></div><div class="pub-status">Europe’s Journal of Psychology</div></article>
+      <article class="pub reveal"><div><span class="pub-type">Manuscript · Under review</span><h3>Online Peer Victimization, Emotion Regulation, and Social Connectedness: An SEM Study</h3><p>Rasheed, S.</p></div><div class="pub-status">Current Issues in Personality Psychology</div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">07 · Professional journey</div><h2>A path across research & practice.</h2></div>
+      <p>Selected roles showing how my work has developed across clinical, community and interdisciplinary research settings.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal"><div class="timeline-date">Jun 2023 — Present</div><h3>Research Officer · Inter-Services Public Relations (ISPR)</h3><p>Interdisciplinary research, evidence synthesis, behavioral science, health psychology, public communication and analytical briefs for senior stakeholders.</p></div>
+      <div class="timeline-item reveal"><div class="timeline-date">Jun 2023 — Present</div><h3>Voluntary Resettlement Counsellor · Welfare & Rehabilitation Directorate</h3><p>Trauma-informed psychosocial support and community rehabilitation work with displaced ex-servicemen, widows and dependents.</p></div>
+      <div class="timeline-item reveal"><div class="timeline-date">Jun 2021 — Apr 2024</div><h3>Research Fellow · National Centre for Research and Suicide Prevention</h3><p>Psychometric research involving resilience, depression, anxiety, coping and behavioral constructs, including survey tools and data analysis.</p></div>
+      <div class="timeline-item reveal"><div class="timeline-date">Jan 2021 — May 2023</div><h3>Child & Adult Therapist · Step to Learn ADHD & AWB Center</h3><p>Assessment and individualized therapeutic work with children and adults with ASD, ADHD and Down syndrome, alongside multidisciplinary developmental case records.</p></div>
+      <div class="timeline-item reveal"><div class="timeline-date">Jun 2019 — Sep 2020</div><h3>Clinical Psychologist · Shifa International Hospital</h3><p>Psychological assessment, psychometric testing and clinical reporting across child and adult presentations.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="academic">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">08 · Academic profile</div><h2>Learning, research & recognition.</h2></div>
+      <p>A concise academic profile for collaborators, research groups and prospective PhD supervisors.</p>
+    </div>
+    <div class="recognition">
+      <div class="award-list">
+        <div class="award reveal"><div class="award-year">2024</div><div><strong>MPhil Psychology</strong><span>Fatima Jinnah Women University · GPA 3.57/4.0</span></div></div>
+        <div class="award reveal"><div class="award-year">2019</div><div><strong>BS Psychology</strong><span>International Islamic University Islamabad · GPA 3.41/4.0</span></div></div>
+        <div class="award reveal"><div class="award-year">2024</div><div><strong>PhD-Level Research Commendation</strong><span>FJWU · Recognition at MPhil defense</span></div></div>
+        <div class="award reveal"><div class="award-year">2024</div><div><strong>Field Recognition Award</strong><span>International Conference · Quaid-i-Azam University</span></div></div>
+        <div class="award reveal"><div class="award-year">2024</div><div><strong>Counsellor Excellence Award</strong><span>NCRSP / FJWU</span></div></div>
+        <div class="award reveal"><div class="award-year">2022</div><div><strong>Best Oral Presenter Award</strong><span>International Conference · QAU Islamabad</span></div></div>
+      </div>
+      <aside class="academic-card reveal">
+        <div class="eyebrow" style="color:#c9d6cc">Academic connections</div>
+        <h3>Research is better when ideas travel.</h3>
+        <p>For academic profiles, professional networking and research collaboration, you can find me through the links below.</p>
+        <div class="academic-links">
+          <a href="https://orcid.org/0009-0007-6402-5951" target="_blank" rel="noopener">ORCID ↗</a>
+          <a href="https://www.linkedin.com/in/shehla-k-609a44393/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section gallery-section" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">09 · Fieldwork archive</div><h2>Research, in context.</h2></div>
+      <p>A visual record of community-based fieldwork connected to my research on mental health, displacement and resilience.</p>
+    </div>
+    <div class="gallery-grid">
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-01.jpg" data-title="Community interview" aria-label="Open Community interview">
+          <img src="images/field-01.jpg" alt="Community interview" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Community interview</strong><span>Field-based data collection with community members.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-02.jpg" data-title="Listening in context" aria-label="Open Listening in context">
+          <img src="images/field-02.jpg" alt="Listening in context" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Listening in context</strong><span>A household conversation informing the research process.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-03.jpg" data-title="Community perspectives" aria-label="Open Community perspectives">
+          <img src="images/field-03.jpg" alt="Community perspectives" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Community perspectives</strong><span>Documenting lived experiences through direct conversation.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-04.jpg" data-title="Field notes" aria-label="Open Field notes">
+          <img src="images/field-04.jpg" alt="Field notes" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Field notes</strong><span>Interview materials and contextual observations during fieldwork.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-05.jpg" data-title="Household interview" aria-label="Open Household interview">
+          <img src="images/field-05.jpg" alt="Household interview" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Household interview</strong><span>A field interview conducted within a community setting.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-06.jpg" data-title="Community dialogue" aria-label="Open Community dialogue">
+          <img src="images/field-06.jpg" alt="Community dialogue" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Community dialogue</strong><span>Engaging with participants in their everyday environment.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-07.jpg" data-title="Understanding context" aria-label="Open Understanding context">
+          <img src="images/field-07.jpg" alt="Understanding context" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Understanding context</strong><span>Fieldwork connecting psychological measures with lived experience.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-08.jpg" data-title="Participant conversation" aria-label="Open Participant conversation">
+          <img src="images/field-08.jpg" alt="Participant conversation" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Participant conversation</strong><span>Listening to perspectives that shape the research questions.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-09.jpg" data-title="Field-based research" aria-label="Open Field-based research">
+          <img src="images/field-09.jpg" alt="Field-based research" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Field-based research</strong><span>Direct engagement with community members during data collection.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-10.jpg" data-title="Research in practice" aria-label="Open Research in practice">
+          <img src="images/field-10.jpg" alt="Research in practice" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Research in practice</strong><span>Moving beyond measures to understand context and experience.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-11.jpg" data-title="Women’s perspectives" aria-label="Open Women’s perspectives">
+          <img src="images/field-11.jpg" alt="Women’s perspectives" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Women’s perspectives</strong><span>A community-based conversation within a household setting.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-12.jpg" data-title="Listening to lived experience" aria-label="Open Listening to lived experience">
+          <img src="images/field-12.jpg" alt="Listening to lived experience" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Listening to lived experience</strong><span>A field interview focused on participants’ experiences.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-13.jpg" data-title="Household context" aria-label="Open Household context">
+          <img src="images/field-13.jpg" alt="Household context" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Household context</strong><span>Understanding experiences within their social and living context.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-14.jpg" data-title="Community interview" aria-label="Open Community interview">
+          <img src="images/field-14.jpg" alt="Community interview" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Community interview</strong><span>Field-based engagement supported by structured interview materials.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-15.jpg" data-title="Context and evidence" aria-label="Open Context and evidence">
+          <img src="images/field-15.jpg" alt="Context and evidence" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Context and evidence</strong><span>Documenting conversations that contribute to the evidence base.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-16.jpg" data-title="Field engagement" aria-label="Open Field engagement">
+          <img src="images/field-16.jpg" alt="Field engagement" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Field engagement</strong><span>Researcher-participant dialogue in a community setting.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-17.jpg" data-title="Community perspectives" aria-label="Open Community perspectives">
+          <img src="images/field-17.jpg" alt="Community perspectives" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Community perspectives</strong><span>A conversation contributing to understanding displacement and resilience.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-18.jpg" data-title="Fieldwork" aria-label="Open Fieldwork">
+          <img src="images/field-18.jpg" alt="Fieldwork" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Fieldwork</strong><span>Direct data collection in a community environment.</span></figcaption>
+      </figure>
+
+      <figure class="gallery-item reveal">
+        <button class="gallery-button" type="button" data-lightbox="images/field-19.jpg" data-title="Researcher in the field" aria-label="Open Researcher in the field">
+          <img src="images/field-19.jpg" alt="Researcher in the field" loading="lazy">
+          <span class="zoom">+</span>
+        </button>
+        <figcaption><strong>Researcher in the field</strong><span>Field-based interviewing and documentation.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="writing">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">10 · Writing & public communication</div><h2>Making evidence readable.</h2></div>
+      <p>Selected public-facing writing on forced migration, developmental vulnerability, rehabilitation and related psychological themes.</p>
+    </div>
+    <div class="writing">
+      <article class="writing-card reveal"><div class="eyebrow">Public writing</div><h3>Research beyond academic walls.</h3><p>12+ opinion and feature contributions across Dawn, The Express Tribune, The Nation and Hilal Magazine, translating psychological and social issues for broader audiences.</p><a class="link-arrow" href="#contact">Enquire about writing →</a></article>
+      <article class="writing-card reveal"><div class="eyebrow">Blog · Coming soon</div><h3>Notes from research & practice.</h3><p>A future space for reflections on psychological research, measurement, fieldwork, behavioral science and the realities behind the evidence.</p><a class="link-arrow" href="#contact">Suggest a topic →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <div class="eyebrow" style="color:#c9d6cc">11 · Contact</div>
+      <h2>Let’s talk about<br><em>research.</em></h2>
+      <p>For research collaboration, academic opportunities, evidence and writing projects, professional enquiries or other relevant conversations, I would be glad to hear from you.</p>
+      <a class="email" href="mailto:shehlarasheed66@gmail.com">shehlarasheed66@gmail.com</a>
+    </div>
+    <div class="contact-side">
+      <span>Professional profile</span><a href="https://www.linkedin.com/in/shehla-k-609a44393/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <span>Research identity</span><a href="https://orcid.org/0009-0007-6402-5951" target="_blank" rel="noopener">ORCID ↗</a>
+      <span>Sessions / enquiries</span><a href="mailto:shehlarasheed66@gmail.com?subject=Professional%20Enquiry">Book / enquire by email ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner"><div>© <span id="year"></span> Shehla Rasheed. All rights reserved.</div><div>Psychology · Research · Evidence · Communication</div></div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Close">×</button>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-title" id="lightboxTitle"></div>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+const box=document.getElementById('lightbox'), boxImg=document.getElementById('lightboxImg'), boxTitle=document.getElementById('lightboxTitle');
+document.querySelectorAll('[data-lightbox]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    boxImg.src=btn.dataset.lightbox;
+    boxImg.alt=btn.dataset.title;
+    boxTitle.textContent=btn.dataset.title;
+    box.classList.add('open'); box.setAttribute('aria-hidden','false');
+  });
+});
+function closeBox(){box.classList.remove('open');box.setAttribute('aria-hidden','true');boxImg.src='';}
+document.querySelector('.lightbox-close').addEventListener('click',closeBox);
+box.addEventListener('click',e=>{if(e.target===box)closeBox()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBox()});
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open')));
+</script>
+</body>
+</html>
