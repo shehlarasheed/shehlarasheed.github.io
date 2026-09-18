@@ -1,0 +1,1 @@
+Upload/replace the HTML files and style.css in your GitHub repository root. Keep your existing images/ folder with: profile.jpg, field-01.jpg, field-03.jpg, field-07.jpg, field-16.jpg, field-17.jpg, field-19.jpg. Do not upload the other field images.
